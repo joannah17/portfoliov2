@@ -95,19 +95,20 @@ export default function Footer() {
             <FooterDiv>
                 <Explore>
                     <Title>Explore</Title>
-                    <FooterLink to="/about"><Text>About</Text></FooterLink>
-                    <FooterLink to="/hire"><Text>Hire me</Text></FooterLink>
-                    <FooterLink to="/projects"><Text>Portfolio</Text></FooterLink>
+                    <FooterLink to="/about"><Text>About Me</Text></FooterLink>
+                    <FooterLink to="/hire"><Text>Technologies</Text></FooterLink>
+                    <FooterLink to="/projects"><Text>Projects</Text></FooterLink>
                 </Explore>
                 <GetInTouch>
                     <Title>Get in touch</Title>
                     <FooterLink to="/contact"><Text>Contact</Text></FooterLink>
-                    <FooterLinkSocial href='https://www.linkedin.com/in/tooba-jamal/'><Text>LinkedIn</Text></FooterLinkSocial>
-                    <FooterLinkSocial href='https://www.instagram.com/codingmysoul/'><Text>Instagram</Text></FooterLinkSocial>
-                    <FooterLinkSocial href="https://twitter.com/codingmysoul"><Text>Twitter</Text></FooterLinkSocial>
+                    <FooterLinkSocial href='https://www.linkedin.com/in/joannah-marie-cata-b99143371/'><Text>LinkedIn</Text></FooterLinkSocial>
+                    <FooterLinkSocial href='https://github.com/'><Text>Github</Text></FooterLinkSocial>
+                   
+                   
                 </GetInTouch>
             </FooterDiv>
-            <Copyright>© {year} Tooba Jamal - All right Reserved.</Copyright>
+            <Copyright>© {year} - All right Reserved.</Copyright>
         </FooterDivParent>
         </>
     )

@@ -132,20 +132,20 @@ export default function Projects() {
         <>
         <ContainerDiv data-aos="zoom-in" data-aos-duration="1500">       
             {!params.title && <Title>Projects</Title>}
-            {!params.title &&<Desc>These are a few projects that showcase my <Highlight>web development</Highlight> and <Highlight>technical writing</Highlight> skills. The toolset 
-                ranges from <Highlight>HTML/ CSS</Highlight> to <Highlight>vanilla JavaScript, React, and Machine Learning</Highlight>. Click on any project to dive deeper into it.</Desc>}
+            {!params.title &&<Desc>Here are some of my projects that showcase my skills. As a student, 
+                I enjoy creating simple yet creative designs. Click on any project to learn more.</Desc>}
         
-            {!params.title &&<ProjHeading>Web development projects</ProjHeading>}
-            {!params.title && <ProjectsContainerParent> {userProjects} </ProjectsContainerParent>}
-            {!params.title &&<ProjHeading>Technical Writing projects</ProjHeading>}
+            
+           
             {!params.title && <ProjectsContainerParent>{writingProjects} </ProjectsContainerParent>}
             {!params.title && <div class="checkout-parent">
-            <a href="https://www.freecodecamp.org/news/author/tooba/" 
-        className="check-out">Check out more of my writing 📢</a>
+            <a href="" 
+        className="check-out"></a>
             </div>}
             <Outlet/>
         </ContainerDiv>
         </>
+        
     )
 }
 

@@ -120,37 +120,52 @@ export default function Contact() {
     }
   }
 
-  function handleMessageChange(event) {
-    setMessage(event.target.value);
-    if (!event.target.validity.valid) {
-      event.target.setCustomValidity("Please send a messsage of at least 10 characters.");
-    } else {
-      event.target.setCustomValidity("");
-    }
+function handleMessageChange(event) {
+  const value = event.target.value;
+  setMessage(value);
+
+  if (value.length < 10) {
+    event.target.setCustomValidity("Please enter at least 10 characters.");
+  } else {
+    event.target.setCustomValidity("");
   }
+}
+
     const sendEmail = (e) => {
-        e.preventDefault()
-       
-        emailjs.sendForm(import.meta.env.VITE_REACT_YOUR_SERVICE_ID, 
-            import.meta.env.VITE_REACT_YOUR_TEMPLATE_ID, form.current, 
-            import.meta.env.VITE_REACT_YOUR_PUBLIC_KEY)
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-        })
-    }
+  e.preventDefault();
+
+  emailjs
+    .sendForm(
+      import.meta.env.VITE_REACT_YOUR_SERVICE_ID,
+      import.meta.env.VITE_REACT_YOUR_TEMPLATE_ID,
+      form.current,
+      import.meta.env.VITE_REACT_YOUR_PUBLIC_KEY
+    )
+    .then(
+      (result) => {
+        console.log(result.text);
+        alert("✅ Message sent successfully!");
+        setEmail("");
+        setMessage("");
+        form.current.reset();
+      },
+      (error) => {
+        console.log(error.text);
+        alert("❌ Failed to send message. Please try again.");
+      }
+    );
+};
+
     return (
         <>
         <ContactContainerDiv data-aos="zoom-in" data-aos-duration="1500">
             <Title>Let's have a talk</Title>
             <Desc>
-                Interested in building great things together? I am here to help you.
-                Please send me a message and I'll get back to you ASAP
+                
             </Desc>
             <Form ref={form} onSubmit={sendEmail}>
                 <Label>Name</Label>
-                <NameEmail type="text" name="user_name" required pattern="[A-Za-z]+" placeholder='Full name'/>
+                <NameEmail type="text" name="user_name" placeholder='Full name'/>
                 <Label>Email</Label>
                 <NameEmail type="email" 
                 pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" 
@@ -167,10 +182,13 @@ export default function Contact() {
                 I know you like trusty friends and I love making new ones. Hit me up on your favorite social platform ⤵️
             </Desc>
             <SocialIconContainer>
-            <a href='https://www.linkedin.com/in/tooba-jamal/' target="_blank"><SocialIcon src='./images/linkedin.png'/></a>
-            <a href='https://github.com/ToobaJamal' target="_blank"><SocialIcon src='./images/github.png'/></a>
-            <a href='https://www.instagram.com/codingjoyy/' target="_blank"><SocialIcon src='./images/insta.png'/></a>
-            <a href='https://twitter.com/codingjoyy' target="_blank"><SocialIcon src='./images/twitter.png'/></a>
+            <a href='https://www.linkedin.com/in/joannah-marie-cata-b99143371/'><SocialIcon src='./images/linkedin.png' /></a>
+            <a href='https://github.com/' target="_blank"><SocialIcon src='./images/github.png'/></a>
+            <a href='https://www.instagram.com/wannah_rayd?igsh=MTc4NGRzMzVobnptaQ==/' target="_blank"><SocialIcon src='./images/insta.png'/></a>
+            <a href='https://www.facebook.com/jmarie.bibanco/' target="_blank"><SocialIcon src='./images/fb.png'/></a>
+            
+            
+            
             </SocialIconContainer>
         </ContactContainerDiv>
         

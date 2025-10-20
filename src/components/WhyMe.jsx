@@ -88,17 +88,17 @@ export default function WhyMe() {
                 <Title data-aos="flip-right" data-aos-duration="1000">Why hire me?</Title>
                 <Services >
                     <ServiceContainer data-aos="zoom-in" data-aos-duration="1500">
-                        <ServiceTitle>Web Development</ServiceTitle>
-                        <ServiceDesc>Turn your idea into a user-friendly and responsive website that fulfils the purpose</ServiceDesc>
+                        <ServiceTitle>UI/UX Prototyping & Wireframing </ServiceTitle>
+                        <ServiceDesc>I design simple and user-friendly layouts using figma and i enjoy creating prototypes that turn ideas into real designs.</ServiceDesc>
                     </ServiceContainer>
                     <ServiceContainer data-aos="zoom-in" data-aos-duration="1500">
-                        <ServiceTitle>Technical Writing</ServiceTitle>
-                        <ServiceDesc>Make complicated topics/technical products easy for your audience to understand.</ServiceDesc>
+                        <ServiceTitle>HTML & CSS Development</ServiceTitle>
+                        <ServiceDesc>I make simple web pages using HTML and CSS, i like turning designs into working websites that look good on any device.</ServiceDesc>
                     </ServiceContainer>
                     <ServiceContainer data-aos="zoom-in" data-aos-duration="1500">
-                        <ServiceTitle>Code Refactoring</ServiceTitle>
-                        <ServiceDesc>Ugly looking website are a threat and bugs are intimidating. 
-                            Fix them with me to fix your business.</ServiceDesc>
+                        <ServiceTitle>Passionate Student Developer</ServiceTitle>
+                        <ServiceDesc>As a BSIT student, I'm eager to learn and improve my skills in web designs and
+                            front-end development. Every project i do helps me grow and get better. </ServiceDesc>
                     </ServiceContainer>
                 </Services>
             </WhyMeSection>

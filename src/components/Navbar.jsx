@@ -117,17 +117,17 @@ export default function Navbar() {
     return (
         <>
             <NavbarDiv>
-                <Logo to="/">Tooba Jamal</Logo>
-                <NavbarLink to="/about">About</NavbarLink>
-                <NavbarLink to="/hire">Hire me</NavbarLink>
+                <Logo to="/">Joannah Marie</Logo>
+                <NavbarLink to="/about">About Me</NavbarLink>
+                <NavbarLink to="/hire">Technologies</NavbarLink>
                 <NavbarLink to="/projects">Projects</NavbarLink>
                 <NavbarLink to="/contact">Contact</NavbarLink>
             </NavbarDiv>
-            <LogoMobile to="/">Tooba Jamal</LogoMobile>
+            <LogoMobile to="/">Joannah Marie</LogoMobile>
             <MobileNavbarDiv>
                 <MobileNavbarLink to="/about">About</MobileNavbarLink>
                 <DividerLine />
-                <MobileNavbarLink to="/hire">Hire me</MobileNavbarLink>
+                <MobileNavbarLink to="/hire">Technologies</MobileNavbarLink>
                 <DividerLine />
                 <MobileNavbarLink to="/projects">Projects</MobileNavbarLink>
                 <DividerLine />

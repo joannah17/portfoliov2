@@ -2,30 +2,68 @@ import styled from 'styled-components'
 import { ContainerDiv, Desc, Title, Highlight } from './About'
 import { SocialIcon, SocialIconContainer } from './Contact'
 
-export default function Hire() {
-    return (
-        <>
-            <ContainerDiv data-aos="zoom-in" data-aos-duration="1500">
-            <Title>Web Developer and Technical Writer</Title>
-            <Desc>I'm a web developer and technical writer with a background in machine learning. 
-                I specialize in <Highlight>JavaScript</Highlight> and <Highlight>React</Highlight>.
-                I also love writing and combined my writing skills in tech I became a <Highlight>technical writer</Highlight>.
-                My toolkit includes <Highlight>HTML, CSS, JavaScript, React, 
-                Python for Machine Learning, Jupyter Notebooks, Git, and GitHub</Highlight>—but what matters most is what you need from 
-                me as your web developer. Whether it's building your website, technical document or writing blog post 
-                that are both effective and accessible, I'll ensure that the content is clear and comprehensible, free from unnecessary jargon.
-                I love what I do, and building websites that provide better user experience is my passion. 
-                I've written technical articles for famous publications including <Highlight>FreeCodeCamp</Highlight>, 
-                <Highlight> Towards Data Science</Highlight>, and <Highlight>Ably</Highlight>. 
-                I'm known for my ability to explain complex topics in an easily understandable manner.
-                Currently looking for life-changing opportunities. Get in touch if you have got any!</Desc>
-                <SocialIconContainer>
-            <a href='https://www.linkedin.com/in/tooba-jamal/'><SocialIcon src='./images/linkedin.png'/></a>
-            <a href='https://github.com/ToobaJamal'><SocialIcon src='./images/github.png'/></a>
-            <a href='https://www.linkedin.com/in/tooba-jamal/'><SocialIcon src='./images/insta.png'/></a>
-            <a href='https://twitter.com/codingmysoul'><SocialIcon src='./images/twitter.png'/></a>
-            </SocialIconContainer>
-            </ContainerDiv>
-        </>
-    )
+const TechList = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin: 1em 0 1em 0;
+  text-align: left;
+`
+
+const TechItem = styled.li`
+  margin-bottom: 0.6em;
+  position: relative;
+  padding-left: 1.2em;
+
+  &::before {
+    content: "•";
+    color: #DE3163; /* same highlight color */
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+`
+
+export default function Technologies() {
+  return (
+    <>
+      <ContainerDiv data-aos="zoom-in" data-aos-duration="1500">
+        <Title>Technologies</Title>
+
+        {/* everything inside Desc for perfect alignment */}
+        <Desc>
+         As a third-year student, I’ve gained hands-on experience with a wide range of tools and technologies.
+        While I’m still shaping my specialization, here are some of the technologies and tools i have experienced so far.
+          
+          <TechList>
+            <TechItem>
+              <Highlight>Languages:</Highlight> JavaScript, HTML, CSS, Python
+            </TechItem>
+            <TechItem>
+              <Highlight>Frameworks & Libraries:</Highlight> React.js, Tailwind CSS, Node.js, Express
+            </TechItem>
+            <TechItem>
+              <Highlight>Tools:</Highlight> Git, GitHub
+            </TechItem>
+            <TechItem>
+              <Highlight>Design Tools:</Highlight> Figma, Canva
+            </TechItem>
+            <TechItem>
+              <Highlight>Currently Learning:</Highlight> UI/UX design and improving my front-end skills
+            </TechItem>
+          </TechList>
+
+          I love experimenting with new technologies that make websites more interactive and user-friendly.
+          Every tool I learn helps me bring my ideas to life in better ways.
+          
+        </Desc>
+
+        <SocialIconContainer>
+          <a href='https://www.linkedin.com/in/joannah-marie-cata-b99143371/'><SocialIcon src='./images/linkedin.png' /></a>
+          <a href='https://github.com/'><SocialIcon src='./images/github.png' /></a>
+          <a href='https://www.instagram.com/wannah_rayd?igsh=MTc4NGRzMzVobnptaQ==/'><SocialIcon src='./images/insta.png' /></a>
+           <a href='https://www.facebook.com/jmarie.bibanco/'><SocialIcon src='./images/fb.png' /></a>
+        </SocialIconContainer>
+      </ContainerDiv>
+    </>
+  )
 }

@@ -83,9 +83,9 @@ export default function ProjectDetail(props) {
         <>
         <ContainerDiv data-aos="zoom-in" data-aos-duration="1500">
             <Title>{thisProject.title}</Title>
-            {thisProject.hasOwnProperty('gitHub') ? <ButtonContainer><a href={thisProject.link}><Button>Live Demo</Button></a> 
+            {thisProject.hasOwnProperty('gitHub') ? <ButtonContainer><a href={thisProject.link}></a> 
             <a href={thisProject.gitHub}><Button>GitHub</Button></a></ButtonContainer> 
-            : <ButtonContainer><a href={thisProject.link}><Button>Read more</Button></a></ButtonContainer>}
+            : <ButtonContainer><a href={thisProject.link}><Button>Github</Button></a></ButtonContainer>}
             <ProjHighlight>{thisProject.hook}</ProjHighlight>
             <Desc>{thisProject.detail}</Desc>
             <ProjImgContainer>

@@ -162,20 +162,19 @@ export default function Portfolio() {
     ))
     return (
         <>
-        <PortfolioTitle data-aos="flip-right" data-aos-duration="1000">Portfolio</PortfolioTitle>
+        <PortfolioTitle data-aos="flip-right" data-aos-duration="1000">My Works</PortfolioTitle>
         <ButtonContainer>
             <Button onClick={() => setProjectsType("all")}>All</Button>
-            <Button onClick={() => setProjectsType("web-dev")}>Web Development</Button>
-            <Button onClick={() => setProjectsType("writing")}>Technical Writing</Button>
+           
         </ButtonContainer>
-        {projectsType === "all" ? <PortfolioDiv ><ProjHeading data-aos="flip-right" data-aos-duration="1000">Web Development Projects</ProjHeading> <ProjectsContainerParent>{webProjects}</ProjectsContainerParent> 
-        <ProjHeading data-aos="flip-right" data-aos-duration="1000">Technical Writing Projects</ProjHeading> <ProjectsContainerParent>{techWritingProjects}</ProjectsContainerParent> 
-        <a href="https://www.freecodecamp.org/news/author/tooba/" className="check-out" data-aos="flip-right" data-aos-duration="1000">Check out more of my writing</a>
+        {projectsType === "all" ? <PortfolioDiv ><ProjHeading data-aos="flip-right" data-aos-duration="1000"></ProjHeading> 
+         <ProjectsContainerParent>{techWritingProjects}</ProjectsContainerParent> 
+        <a href="https://www.freecodecamp.org/news/author/tooba/" className="check-out" data-aos="flip-right" data-aos-duration="1000"></a>
         </PortfolioDiv > 
         : projectsType === "web-dev" ? <PortfolioDiv><ProjHeading data-aos="flip-right" data-aos-duration="1000">Web Development Projects</ProjHeading> {webProjects}</PortfolioDiv> 
         : projectsType === "writing" ? <PortfolioDiv><ProjHeading data-aos="flip-right" data-aos-duration="1000">Technical Writing Projects
         </ProjHeading> {techWritingProjects} <a href="https://www.freecodecamp.org/news/author/tooba/" 
-        className="check-out" data-aos="flip-right" data-aos-duration="1000">Check out more of my writing</a></PortfolioDiv> : ""}
+        className="check-out" data-aos="flip-right" data-aos-duration="1000"></a></PortfolioDiv> : ""}
         </>
     )
 }

@@ -49,25 +49,28 @@ export default function About() {
         <ContainerDiv data-aos="zoom-in" data-aos-duration="1500">
             
             <Title>About me</Title>
-            <Desc>Hi, My name is Tooba. Thank you for stopping by.  <br/><br/>
-                I hold a master's degree in Data Engineering and have a background in machine learning. I discovered my love for <Highlight>JavaScript </Highlight>
-                and <Highlight>web development</Highlight> and started learning it. And now I spend most of my day building interactive web experiences.  
-            I have always loved writing and started writing <Highlight>technical articles</Highlight> back in 2021. I write technical articles at famous 
-            publications including <Highlight>Towards Data Science</Highlight>, <Highlight>FreeCodeCamp</Highlight>, and <Highlight>Ably</Highlight> received great feedback from users. 
-            They say I make complex topics easy to understand.  
-            I have always enjoyed learning new things as I believe learning is growing. <br/><br/>
-            Currently, I am a freelance web developer and technical writer looking for life-changing opportunities. I'd love to help you build a website or technical document that's clear and efficient—one that gets the job done and doesn't get in the way of your business.
+            <Desc>Hello, thank you for stopping by.  <br/><br/>
+            I’m Joannah Marie Cata, 3rd year student im taking a Bachelor of Science in Western Institute of Technology, but people call me "jo",
+            an aspiring frontend developer and UI/UX designer, continuously learning and improving my skills every day.
+            I really learning new things as I believe learning is growing. 
             <br/><br/>
-            <Skills>Languages:</Skills> JavaScript , HTML5, CSS, Python
-            <br/><br/>
-            <Skills>Frameworks/Libraries:</Skills> React.js, Tailwind CSS, Styled-Components, Node, Express
-            <br/><br/>
-            <Skills>Tools:</Skills> Git, GitHub</Desc>
+            <Skills>EDUCATION:</Skills><br></br>
+            Elementary - Cabatuan Central Elementary School, 2010–2017<br></br>
+            High School - Cabatuan National Comprehensive High School, 2017–2021<br></br>
+            Senior High School - Cabatuan National Comprehensive High School, 2021–2023<br></br>
+            College - Western Institute of Technology, 2023<br></br>
+            <br></br>
+            <Skills>GOAL:</Skills><br></br>
+            My goal is to keep improving my skills and become a professional developer who builds helpful, efficient, usable, and creative web solutions. <br></br>
+            </Desc>
             <SocialIconContainer>
-            <a href='https://www.linkedin.com/in/tooba-jamal/' target="_blank"><SocialIcon src='./images/linkedin.png'/></a>
-            <a href='https://github.com/ToobaJamal' target="_blank"><SocialIcon src='./images/github.png'/></a>
-            <a href='https://www.linkedin.com/in/tooba-jamal/' target="_blank"><SocialIcon src='./images/insta.png'/></a>
-            <a href='https://twitter.com/codingmysoul' target="_blank"><SocialIcon src='./images/twitter.png'/></a>
+            <a href='https://www.linkedin.com/in/joannah-marie-cata-b99143371/'><SocialIcon src='./images/linkedin.png' /></a>
+            <a href='https://github.com/' target="_blank"><SocialIcon src='./images/github.png'/></a>
+            <a href='https://www.instagram.com/wannah_rayd?igsh=MTc4NGRzMzVobnptaQ==/' target="_blank"><SocialIcon src='./images/insta.png'/></a>
+            <a href='https://www.facebook.com/jmarie.bibanco/' target="_blank"><SocialIcon src='./images/fb.png'/></a>
+           
+           
+            
             </SocialIconContainer>
         </ContainerDiv>
         </>
