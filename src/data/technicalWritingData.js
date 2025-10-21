@@ -2,7 +2,7 @@ const technicalWritingData = {
     articles: [
       {
         title: "Anisave",
-        link: "https://github.com/Janriisasi/anisavev2.git",
+        link: "https://anisave.vercel.app/landing",
         imgUrl:
           "/images/anisave11.png",
           skills: ["Tailwind CSS", "Supabase", "React", "Vite",   ],
@@ -12,7 +12,7 @@ const technicalWritingData = {
       },
       {
         title: "Portfolio",
-        link: "https://github.com/",
+        link: "https://joannahcataportfolio.vercel.app/",
       imgUrl:
           "/images/portfolio.png",
           skills: ["Javascript", "Next.js"],
